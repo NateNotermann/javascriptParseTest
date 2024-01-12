@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script>
+        let num = 1
+        let array = []
+
+        document.addEventListener("DOMContentLoaded", function() {
+            strDomloaded = 'DOMContentLoaded'
+            array.push(strDomloaded)
+            console.log('DOMContentLoaded');
+        });
+    </script>
+
+    <!-- pre head files -->
+    <script src="src.js"></script>
+    <script async src="srcAsync.js"></script>
+    <script defer src="srcDefer.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- head files -->
+    <script defer src="headDefer.js"></script>
+    <script async src="headAsync.js"></script>
+    <script src="head.js"></script>
+</head>
+<body>
+        <h3>Javascript sr/async/defer File Parsing Test</h3>
+        <p>Javascript file were loaded in this order:</p>
+        
+        <ul id="mylIST">
+        </ul>
+
+         <!-- body files -->
+        <script defer src="bodyDefer.js"></script>
+        <script async src="bodyAsync.js"></script>
+        <script src="body.js"></script>
+
+        <script defer src="last.js"></script>
+</body>
+</html>
+
